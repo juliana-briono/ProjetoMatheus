@@ -1,0 +1,18 @@
+<h1>Lista de Localidades</h1>
+<br/>
+<table>
+    <tr>
+        <th></th>
+        <th>Nome</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let localidade of localidades">
+        <td><img [src]="localidade.urlImagem" alt=""></td>
+        <td>{{localidade.nome}}</td>
+        <td>
+                <a type="button" class="btn btn-outline-primary me-2" [routerLink]="['/localizacao-cadastro', localidade.id]" routerLinkActive="router-link-active" >alterar</a>
+        </td>
+    </tr>
+</table>
+<br/>
+<a type="button" class="btn btn-outline-primary me-2" [routerLink]="['/localizacao-cadastro']" routerLinkActive="router-link-active" >Novo</a>

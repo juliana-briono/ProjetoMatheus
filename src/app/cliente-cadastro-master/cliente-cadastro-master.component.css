@@ -1,0 +1,22 @@
+
+.cadastro-cliente-master{
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 300px;
+    z-index: 9999;
+    padding: 20px;
+    
+}
+.cadastro-cliente-master input[type="text"], .cadastro-cliente-master input[type="password"]{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+.cadastro-cliente-master input[type="submit"]{
+    width: 100%;
+
+}

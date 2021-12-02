@@ -1,0 +1,14 @@
+header{
+    background-color: white;
+    color: black;
+    height: 80px;
+    box-shadow: 1px 1px 3px silver;
+}
+
+header img{
+    height: 55px;
+}
+
+.btn-cart img{
+    height: 24px;
+}

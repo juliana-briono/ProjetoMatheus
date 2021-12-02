@@ -1,0 +1,21 @@
+<h1>Lista de Voos cadastrados</h1>
+<br/>
+<table>
+    <tr>
+        <th>Data do voo</th>
+        <th>Origem</th>
+        <th>Destino</th>
+        <th>Quantidade de Passagens</th>
+        <th>Valor</th>
+        <th>Numero do Voo</th>
+    </tr>
+    <tr *ngFor="let voo of voos">
+        <td>{{voo.dataHoraVoo| date:"dd/MM/yyyy hh:mm"}}</td>
+        <td>{{voo.origem.nome}}</td>
+        <td>{{voo.destino.nome}}</td>
+        <td>{{voo.quantidade}}</td>
+        <td>R$ {{voo.valor | number : '1.2-2'}}</td>
+        <td>{{voo.numeroVoo}}</td>
+    </tr>
+</table>
+<a href="javascript:" [routerLink]="['/voo-cadastro']" routerLinkActive="router-link-active"  class="btn btn-outline-primary me-2">Novo</a>

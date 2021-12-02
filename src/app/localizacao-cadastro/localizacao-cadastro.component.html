@@ -1,0 +1,10 @@
+<h1>Localidade</h1>
+
+<form (ngSubmit)="salvar()" [formGroup]="form">
+    <label for="txtNome">Nome:</label> <br/>
+    <input type="text" id="txtNome" formControlName="nomeFormControl"> <br/>
+    <label for="txtImagem">Url Imagem:</label> <br/>
+    <input type="text" id="txtImagem" formControlName="urlImagemFormControl"> <br/>
+    <br/>   
+    <input type="submit" class="btn btn-outline-primary me-2" value="salvar">
+</form>

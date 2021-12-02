@@ -1,0 +1,23 @@
+<h1>Cadastro de um novo Voo</h1>
+
+<form (ngSubmit)="salvar()" [formGroup]="form">
+    <label for="ddlOrigem">Origem:</label> <br/>
+    <select name="ddlOrigem" id="ddlOrigem" formControlName="origemFormControl">
+        <option [value]="localidade.id" *ngFor="let localidade of localidades">{{localidade.nome}}</option>
+    </select><br/>
+    <label for="ddlDestino">Destino:</label> <br/>
+    <select name="ddlDestino" id="ddlDestino" formControlName="destinoFormControl">
+        <option [value]="localidade.id" *ngFor="let localidade of localidades">{{localidade.nome}}</option>
+    </select><br/>
+
+    <label for="txtDataHora">Data e Hora do voo:</label> <br/>
+    <input type="datetime" id="txtDataHora" formControlName="dataHoraFormControl"> <br/>
+    <label for="txtQtdPassageiro">Quantidade de Passageiros:</label> <br/>
+    <input type="number" id="txtQtdPassageiro" formControlName="quantidadeFormControl"> <br/>
+    <label for="txtValor">Valor da Passagem:</label> <br/>
+    <input type="number" id="txtValor" formControlName="valorFormControl"> <br/>
+    <label for="txtNumeroVoo">Numero do Voo:</label> <br/>
+    <input type="text" id="txtNumeroVoo" formControlName="numeroVooFormControl"> <br/>
+    <br/>   
+    <input type="submit" class="btn btn-outline-primary me-2" value="salvar">
+</form>

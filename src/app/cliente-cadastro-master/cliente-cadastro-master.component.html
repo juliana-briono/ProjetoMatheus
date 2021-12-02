@@ -1,0 +1,17 @@
+<h1 style="font-size: 25px; text-align: center; font-weight: 700;">CADASTRO USUÁRIO MASTER</h1>
+
+<div class="cadastro-cliente-master" style="text-align: left;  font-size: 17px;">
+   <form (ngSubmit)="salvar()" [formGroup]="form">
+    <label for="txtNome">Nome</label> <br/>
+    <input type="text" id="txtNome" formControlName="nomeFormControl"> <br/>
+    <label for="txtCPF">CPF</label> <br/>
+    <input type="text" id="txtCPF" formControlName="cpfFormControl"> <br/>
+    <label for="txtEmail">E-Mail</label> <br/>
+    <input type="text" id="txtEmail" formControlName="emailFormControl"> <br/>
+    <label for="txtSenha">Senha</label> <br/>
+    <input type="password" id="txtSenha" formControlName="senhaFormControl">
+    <input type="submit" class="btn btn-outline-primary me-2" value="CADASTRAR" style="background-color: #1E90FF; color: #ffffff; font-weight: 500; ">
+    <br>
+    <br>
+   </form>
+</div>

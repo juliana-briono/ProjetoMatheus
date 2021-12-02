@@ -1,0 +1,29 @@
+
+<div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3" *ngFor="let voo of voos">
+                <div class="card">
+                        <img [src]="voo.destino.urlImagem" class="card-img-top" alt="...">
+                        <div class="card-body">
+                                <p><img src="assets/imgs/ico-pacotes.svg" alt=""> Pacote</p>
+                            <h4 class="card-title">{{voo.destino.nome}}</h4>
+                            <p>Contém</p>
+                            <ul>
+                                    <li>Café da Manhã</li>
+                                    <li>Perto dos pontos turisticos</li>
+                                    <li>Gratis para 1 criança até 12 anos</li>
+                            </ul>
+                            <div class="row">
+                                    <div class="col">
+                                            <small>Diária</small><br/>
+                                            R$ <span class="valor"> <b>{{voo.valor | number : '1.2-2'}}</b></span>
+                                    </div>
+                                    <div class="col text-right">
+                                        <a href="#" (click)="incluirNoCarrinho(voo)" class="btn btn-primary">Comprar</a>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+        </div>
+        
+</div>
+

@@ -1,0 +1,72 @@
+<p style="text-align: center; font-size: 15px;">ESCOLHA O TIPO DE CADASTRO QUE DESEJA REALIZAR</p>
+
+
+<h1 style="font-size: 25px; text-align: center; font-weight: 700;">CADASTRO CLIENTE</h1>
+
+<div class="cadastro-cliente" style="text-align: left;  font-size: 17px;">
+   <form (ngSubmit)="salvar()" [formGroup]="form">
+    <label for="txtNome">Nome</label> <br/>
+    <input type="text" id="txtNome" formControlName="nomeFormControl"> <br/>
+    <label for="txtCPF">CPF</label> <br/>
+    <input type="text" id="txtCPF" formControlName="cpfFormControl"> <br/>
+    <label for="txtDataNascimeto">Data de Nascimento</label> <br/>
+    <input type="date" id="txtDataNascimeto" formControlName="dataNascimetoFormControl"> <br/>
+    <br>
+    <label for="txtEmail">E-Mail</label> <br/>
+    <input type="text" id="txtEmail" formControlName="emailFormControl"> <br/>
+    <label for="txtSenha">Senha</label> <br/>
+    <input type="password" id="txtSenha" formControlName="senhaFormControl">
+    <br/>
+    <br>
+    
+
+
+<h1 style="font-size: 25px; text-align: center; font-weight: 700;">ENDEREÇO</h1>
+   <br>
+    <label for="txtRua">Rua</label> <br/>
+    <input type="text" id="txtRua" formControlName="ruaFormControl"> <br/>
+    <label for="txtNumero">Número</label> <br/>
+    <input type="number" id="txtNumero" formControlName="numeroFormControl"> <br/>
+    <br>
+    <label for="txtComplemento">Complemento</label> <br/>
+    <input type="text" id="txtComplemento" formControlName="complementoFormControl"> <br/>
+    <label for="txtBairro">Bairro</label> <br/>
+    <input type="text" id="txtBairro" formControlName="bairroFormControl"> <br/>
+    <label for="txtCidade">Cidade</label> <br/>
+    <input type="text" id="txtCidade" formControlName="cidadeFormControl"> <br/>
+    <label for="txtCep">Cep</label> <br/>
+    <input type="number" id="txtCep" formControlName="cepFormControl"> <br/>
+    <br/>   
+    <input type="submit" class="btn btn-outline-primary me-2" value="CADASTRAR" style="background-color: #1E90FF; color: #ffffff; font-weight: 500; ">
+    <br>
+    <br>
+    <br>
+
+    <h1 style="font-size: 25px; text-align: center; font-weight: 700;">CADASTRO USUÁRIO MASTER</h1>
+    <br>
+
+<div class="cadastro-cliente-master" style="text-align: left;  font-size: 17px;">
+   <form (ngSubmit)="salvar()" [formGroup]="form">
+    <label for="txtNome">Nome</label> <br/>
+    <input type="text" id="txtNome" formControlName="nomeFormControl"> <br/>
+    <label for="txtCPF">CPF</label> <br/>
+    <input type="text" id="txtCPF" formControlName="cpfFormControl"> <br/>
+    <label for="txtEmail">E-Mail</label> <br/>
+    <input type="text" id="txtEmail" formControlName="emailFormControl"> <br/>
+    <label for="txtSenha">Senha</label> <br/>
+    <input type="password" id="txtSenha" formControlName="senhaFormControl">
+    <br>
+    <br>
+    <input type="submit" class="btn btn-outline-primary me-2" value="CADASTRAR" style="background-color: #1E90FF; color: #ffffff; font-weight: 500; ">
+    <br>
+    <br>
+  
+
+</form>
+</div>
+
+
+  
+
+
+

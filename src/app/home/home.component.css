@@ -1,0 +1,18 @@
+.card{
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px gray;
+    margin-top: 50px;
+}
+.card img{
+    border-radius: 20px 20px 0px 0px;
+}
+ul{
+    font-size: 12px;
+}
+.valor{
+    font-size: 20px;
+}
+
+.btn-primary{
+    margin-top: 20px;
+}

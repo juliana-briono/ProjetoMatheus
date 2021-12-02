@@ -1,0 +1,22 @@
+<div class="bg">
+
+</div>
+<div class="login">
+
+</div>
+
+<div class="login-conteudo" style="border: 20px;">
+<h1 style="font-size: 25px; text-align: center; font-weight: 700;">ENTRAR NA SUA CONTA </h1>
+<br>
+    <form (ngSubmit)="logar()" [formGroup]="form">
+        <label for="txtUsuario">E-Mail</label><br/>
+        <input type="text" id="txtUsuario" formControlName="emailFormControl"><br/>
+        <label for="txtSenha">Senha</label><br/>
+        <input type="password" id="txtSenha" formControlName = "senhaFormControl"><br/>
+        <br/>
+        <input type="submit" class="btn btn-outline-primary me-2" value="ENTRAR" style="background-color: #1E90FF; color: #ffffff; font-weight: 500; ">
+    </form>
+
+</div>
+
+

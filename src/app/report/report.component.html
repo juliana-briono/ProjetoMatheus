@@ -1,0 +1,21 @@
+<h1>Relação de vendas.</h1>
+<table>
+    <tr>
+        <th>Data</th>
+        <th>Cliente</th>
+        <th>Origem</th>
+        <th>Destino</th>
+        <th>Valor</th>
+    </tr>
+    <tr *ngFor="let venda of vendas">
+        <td>{{venda.momentoDaCompra |  date: 'dd/MM/yyyy hh:mm'}}</td>
+        <td>{{venda.cliente.nome}}</td>
+        <td>{{venda.voo.origem.nome}}</td>
+        <td>{{venda.voo.destino.nome}}</td>
+        <td>R$ {{venda.voo.valor | number : '1.2-2'}}</td>
+    </tr>
+    <tr>
+            <td colspan="4"><b>Total:</b></td>
+            <td><b>R$ {{Soma() | number : '1.2-2'}}</b></td>
+        </tr>
+</table>

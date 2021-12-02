@@ -1,0 +1,35 @@
+<!-- <header>
+    <div class="row">
+        <div class="col-6 col-lg-1">
+            <img src="assets/imgs/logo.png" alt="" srcset="">
+        </div>
+        <div class="col-6 col-lg-11">
+            <app-navigation></app-navigation>
+        </div>
+    </div>
+
+</header> -->
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" style="background-color: #000000;">
+  <img src="assets/imgs/align-justify.png" style="margin-left: 30px; height: 30px;" alt="">
+  <a href="" class="d-flex align-items-center col-4 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img src="assets/imgs/logo.png" style ="height: 35px; margin-left: -140px;"alt="">
+  </a>
+  
+  
+  <div class="d-none d-lg-flex col-md-1 text-end text-right">
+    <a class="btn-cart" href="javascript:" [routerLink]="['/favoritos']" routerLinkActive="router-link-active" ><img src="assets/imgs/coracao.png" style="margin-left: 30px"alt=""></a>  
+
+    <a class="btn-cart" href="javascript:" [routerLink]="['/carrinho']" routerLinkActive="router-link-active" ><img src="assets/imgs/carrinho-de-compras.png" style="margin-left: 30px;"alt=""></a>  
+    
+    <a class="btn-cart" href="javascript:" [routerLink]="['/login']" routerLinkActive="router-link-active" ><img src="assets/imgs/user.png" style = "margin-left: 30px; "alt=""></a>             
+  </div>
+
+  <div class="d-none d-lg-flex col-md-2 text-end text-right">
+    <a *ngIf="!masterEstaLogado() && !clienteEstaLogado()" type="button" class="btn btn-outline-primary me-2" style="margin-left: -20px; color: #ffffff; border-color: #ffffff; font-size: 15px;" [routerLink]="['/login']" >Login</a>
+
+    <a *ngIf="!masterEstaLogado() && !clienteEstaLogado()" type="button" class="btn btn-outline-primary me-2" style="margin-left: 20px; color: #ffffff; border-color: #ffffff; font-size: 15px;" [routerLink]="['/cliente-cadastro']">Cadastros</a>
+    <span *ngIf="masterEstaLogado() || clienteEstaLogado()">Olá {{nomeUsuaio()}}</span>
+    
+  </div>
+</header>
